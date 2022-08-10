@@ -1,0 +1,16 @@
+.button-primary {
+
+    border-radius: 4px;
+    padding: 10px 15px;
+    min-width: 50px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+
+    @include font(14px, 400, 21px);
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+    transition: background-color var(--tran-dur-and-tim-fun);
+    
+}
