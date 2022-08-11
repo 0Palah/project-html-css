@@ -1,16 +1,40 @@
 .button-primary {
+  border-radius: 4px;
+  padding: 10px 15px;
+  min-width: 50px;
+  border: 2px solid transparent;
+  border-radius: 30px;
 
-    border-radius: 4px;
-    padding: 10px 15px;
-    min-width: 50px;
-    border: 2px solid transparent;
-    border-radius: 30px;
+  @include font(14px, 400, 21px);
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
 
-    @include font(14px, 400, 21px);
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
+  transition: background-color var(--tran-dur-and-tim-fun);
+}
+.button {
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  &-burger {
+    width: 28px;
+    height: 28px;
+    padding: 6px 2px;
 
-    transition: background-color var(--tran-dur-and-tim-fun);
-    
+    fill: var(--dark-green-color);
+
+    border-style: none;
+    background-color: var(--primary-background-color);
+
+    transition: box-shadow var(--tran-dur-and-tim-fun),
+      fill var(--tran-dur-and-tim-fun);
+    &__icon {
+      width: 24px;
+      height: 16px;
+    }
+    &:focus,
+    &:hover {
+      /*outline: var(--test-outline);*/
+    }
+  }
 }
