@@ -5,9 +5,11 @@
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: -50px;
   @media screen and (min-width: 768px) {
     background-image: url('../images/customers/bg-customers768.png');
-    padding-bottom: 115px;
+    margin-bottom: -81px;
+    padding-bottom: 72px;
   }
   @media screen and (min-width: 1200px) {
     background-image: url('../images/customers/bg-customers1200.png');
