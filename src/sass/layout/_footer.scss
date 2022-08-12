@@ -9,11 +9,18 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    background-image: url(../images/footer_bckgrnd/footer_bckgrnd-fruits_mobile_1x.png);
+    // background-image: url(../images/footer_bckgrnd/footer_bckgrnd-fruits_mobile_1x.png);
+
+
+    background-image: url(../images/footer_bckgrnd/footer_bckgrnd-bottom_mobile_1x.png), url(../images/footer_bckgrnd/footer_bckgrnd-left_mobile_1x.png), url(../images/footer_bckgrnd/footer_bckgrnd-right_mobile_1x.png);
+    background-position: bottom, top left, top right;
+    background-size: 100%, 40%, 40%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+
     @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
       (min-width: 768px) and (min-resolution: 192dpi),
       (min-width: 768px) and (min-resolution: 2dppx) {
-      background-image: url(../images/footer_bckgrnd/footer_bckgrnd-fruits_mobile_2x.png);
+        background-image: url(../images/footer_bckgrnd/footer_bckgrnd-bottom_mobile_2x.png), url(../images/footer_bckgrnd/footer_bckgrnd-left_mobile_2x.png), url(../images/footer_bckgrnd/footer_bckgrnd-right_mobile_2x.png);
     }
     @media screen and (min-width: 768px) {
       padding-top: 100px;
