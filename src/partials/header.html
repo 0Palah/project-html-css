@@ -1,44 +1,15 @@
 <header class="header">
   <div class="container">
-    <nav class="header__flex">
-      <!-- logo -->
-      <a class="logo__box" href="">
-        <svg class="logo__icon">
-          <use href="./images/sprite.svg#logo-foodsta"></use>
-        </svg>
-      </a>
-
-      <!-- MOBILE MENU -->
-      <div class="mobile-menu">
-        <!-- btn burger -->
-        <button class="button-burger" type="button">
-          <svg class="button-burger__icon">
-            <use href="./images/sprite.svg#btn_burger"></use>
+    <div class="header--flex">
+      <nav class="nav--flex">
+        <!-- logo -->
+        <a class="logo__box" href="">
+          <svg class="logo__icon">
+            <use href="./images/sprite.svg#logo-foodsta"></use>
           </svg>
-        </button>
-
-        <!-- mob menu -->
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="">Home</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="">About</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="">Service</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="">Menu</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="">Contact</a>
-          </li>
-        </ul>
-      </div>
-      
-      <!-- MENU -->
-      <div class="menu">
+        </a>
+  
+        <!-- MENU -->
         <ul class="menu-list">
           <li class="menu-list__item">
             <a class="menu-list__link" href="">Home</a>
@@ -55,12 +26,50 @@
           <li class="menu-list__item">
             <a class="menu-list__link" href="">Contact</a>
           </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link--order-link" href="">Order now</a>
-          </li>
         </ul>
-      </div>
-    </nav>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu">
+          <!-- btn burger -->
+          <button class="button-burger" type="button" data-mobile-open>
+            <svg class="button-burger__icon">
+              <use href="./images/sprite.svg#btn_burger"></use>
+            </svg>
+          </button>
+  
+          <!-- mob menu -->
+          <ul class="mobile-menu-nav-list" data-mobile-menu>
+            <li>
+              <a class="mobile-menu-nav-list__link" href="">Home</a>
+            </li>
+            <li>
+              <a class="mobile-menu-nav-list__link" href="">About</a>
+            </li>
+            <li>
+              <a class="mobile-menu-nav-list__link" href="">Service</a>
+            </li>
+            <li>
+              <a class="mobile-menu-nav-list__link" href="">Menu</a>
+            </li>
+            <li>
+              <a class="mobile-menu-nav-list__link" href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!-- BUTTON ORDER NOW -->
+      <button class="button--order-now" type="button" data-modal-open>Order now
+      </button>
+
+    </div>
   </div>
 </header>
-<div class="con-test"></div>
+
+<!-- ВИДАЛИТИ -->
+<!-- <style>
+  .con-test {
+    height: 200px;
+  }
+</style>
+<div class="con-test"></div> -->

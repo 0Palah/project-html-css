@@ -1,67 +1,70 @@
 .header {
+  position: relative;
+  z-index: 100;
   width: 100%;
   padding: 10px 0;
-
   background-color: var(--primary-background-color);
   box-shadow: var(--hdr_shadow);
-
-  &__flex {
+  &--flex {
     display: flex;
     align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  & .nav {
+    &--flex {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+  }
+  & .logo__box {
+    margin-right: auto;
   }
   & .mobile-menu {
     display: block;
     position: relative;
-    &:focus,
-    &:hover,
-    &:active {
-      & .nav-list {
+    &-nav-list {
+      display: block;
+      position: absolute;
+      top: 100%;
+      right: 0;
+
+      overflow: hidden;
+      border-radius: 30px 0 30px 30px;
+      background-color: var(--primary-background-color);
+      box-shadow: var(--hdr_shadow);
+
+      transform-origin: top right;
+      transform: scale(0);
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transition: box-shadow var(--tran-dur-and-tim-fun),
+        opacity var(--tran-dur-and-tim-fun),
+        transform var(--tran-dur-and-tim-fun),
+        visibility var(--tran-dur-and-tim-fun);
+      &.is-open {
+        transform: scale(1);
         opacity: 1;
+        visibility: visible;
         pointer-events: all;
       }
-    }
-    & .nav {
-      &-list {
-        display: block;
-        position: absolute;
-        top: 100%;
-        right: 0;
-  
-        overflow: hidden;
-        border-radius: 30px 0 30px 30px;
-  
-        background-color: var(--primary-background-color);
-        box-shadow: var(--hdr_shadow);
-  
-        opacity: 0;
-        pointer-events: none;
-        transition: box-shadow var(--tran-dur-and-tim-fun) opacity
-          var(--tran-dur-and-tim-fun);
-  
-        /*outline: var(--test-outline);*/
-        // &__item {
-        // }
-        &__link {
-          display: inline-block;
-          min-width: 130px;
-          height: 51px;
-          padding: 16px;
-  
-          text-align: start;
-          vertical-align: middle;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 19px;
-          color: #000000;
-  
-          transition: background-color var(--tran-dur-and-tim-fun);
-  
-          /*outline: var(--test-outline);*/
-  
-          &:focus,
-          &:hover {
-            background-color: var(--button-green-color);
-          }
+      &__link {
+        display: inline-block;
+        min-width: 130px;
+        height: 51px;
+        padding: 16px;
+        text-align: start;
+        vertical-align: middle;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        transition: background-color var(--tran-dur-and-tim-fun);
+        &:focus,
+        &:hover {
+          background-color: var(--button-green-color);
         }
       }
     }
@@ -71,49 +74,40 @@
   }
   & .menu-list {
     display: none;
-  
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-      gap: 5px;
+      align-items: center;
+      gap: 28px;
+      margin-left: auto;
       &__item {
         display: block;
       }
       &__link {
         display: block;
-
         @include font(14px, 400, 16px);
-  
-        // min-width: 83px;
-        padding: 7px 17px;
-        border-radius: 30px;
-        background-color: var(--primary-background-color);
-        transition: background-color var(--tran-dur-and-tim-fun);
-        &--order-link {
-          display: block;
-
-          padding: 7px 17px;
-          border-radius: 30px;
-  
-          background-color: var(--button-green-color);
-          transition: background-color var(--tran-dur-and-tim-fun);
-          &:focus,
-          &:hover {
-            background-color: var(--btn-1_clr__hover);
-          }
-        }
+        transition: text-shadow var(--tran-dur-and-tim-fun);
         &:focus,
         &:hover {
-          background-color: var(--btn-1_clr__hover);
+          text-shadow: 0 0 4px var(--button-green-color);
         }
       }
     }
   }
-}
-
-.con-test {
-  height: 100px;
-
-  outline: var(--test-outline);
-  box-shadow: inset var(--hdr_shadow);
+  & .button--order-now {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      padding: 7px 17px;
+      white-space: nowrap;
+      border-radius: 30px;
+      border: 1px solid transparent;
+      background-color: var(--button-green-color);
+      transition: background-color var(--tran-dur-and-tim-fun);
+      &:focus,
+      &:hover {
+        background-color: var(--btn-1_clr__hover);
+      }
+    }
+  }
 }

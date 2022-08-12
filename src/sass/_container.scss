@@ -8,10 +8,10 @@
     padding: 0 32px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 1280px;
     padding: 0 16px;
   }
 
-  outline: var(--test-outline);
+  // outline: var(--test-outline);
 }
