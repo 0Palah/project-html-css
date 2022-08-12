@@ -2,6 +2,11 @@
     @media screen and (max-width: 768px) {
             padding: 60px 0;
         }
+
+    @media screen and(min-width:1280px){
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 .section-title {
