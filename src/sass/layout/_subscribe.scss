@@ -68,6 +68,7 @@
   border: 0.85px solid var(--yellow-main-color);
   border-radius: 30px;
   margin-bottom: 20px;
+  outline: transparent;
   &::placeholder {
     @include font(12px, 400, 18px);
     color: var(--dark-gray-placeholder-color);
