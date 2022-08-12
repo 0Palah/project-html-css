@@ -8,7 +8,7 @@
   @media screen and (min-width: 768px) {
     gap: 20px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     flex-direction: row-reverse;
     gap: 38px;
     align-items: flex-end;
@@ -24,7 +24,7 @@
     margin-left: auto;
     margin-bottom: 0;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin: 0;
   }
 }
@@ -33,7 +33,7 @@
   @media screen and (min-width: 768px) {
     width: 281px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 546px;
   }
 }
@@ -68,7 +68,6 @@
   border: 0.85px solid var(--yellow-main-color);
   border-radius: 30px;
   margin-bottom: 20px;
-  outline: transparent;
   &::placeholder {
     @include font(12px, 400, 18px);
     color: var(--dark-gray-placeholder-color);
