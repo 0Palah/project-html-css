@@ -1,0 +1,66 @@
+<!-- МОДАЛЬНЕ ВІКНО -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal flex">
+    <button class="button--close-modal" type="button" data-modal-close>
+      <svg class="button--close-modal__icon">
+<use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <span class="modal__name">Leave your details, we will call you back</span>
+    <div class="overflow">
+      <form class="form --flex">
+        <label>
+          <span class="form__label"> Name </span>
+
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            id=""
+            placeholder="Enter your name"
+            required
+          />
+        </label>
+        <label>
+          <span class="form__label"> Phone number </span>
+
+          <input
+            class="form__input"
+            type="tel"
+            name="tel"
+            id=""
+            placeholder="Enter your phone number"
+            required
+          />
+        </label>
+        <label>
+          <span class="form__label"> Email </span>
+          <input
+            class="form__input"
+            type="email"
+            name="amail"
+            id=""
+            placeholder="Enter your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
+        </label>
+        <label>
+          <span class="form__label --comment"> Comment </span>
+
+          <textarea
+            class="form__input --comment"
+            name="coment"
+            id=""
+            placeholder="Text here"
+          ></textarea>
+        </label>
+        <span class="privasy-policy"
+          >By sending you agree to with our
+          <a class="privasy-policy__link" href="">Privacy Policy</a></span
+        >
+        <button class="button--form-submit" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</div>

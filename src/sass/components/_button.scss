@@ -32,9 +32,49 @@
       width: 24px;
       height: 16px;
     }
+  }
+  &--form-submit {
+    display: block;
+    @include font(15px, 400, 20px);
+    height: 42px;
+    padding: 5px 20px;
+    margin: 20px auto 20px;
+    width: fit-content;
+    background-color: var(--primary-background-color);
+    border-radius: 30px;
+    border: 1px solid var(--dark-green-color);
+    transition: background-color var(--tran-dur-and-tim-fun);
+    &:focus,
+    &:focus-visible,
+    &:hover {
+      background-color: var(--yellow-main-color);
+    }
+  }
+  &--close-modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 30px;
+    height: 30px;
+  
+    border-style: none;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid var(--dark-green-color);
+  
+    transition: background-color var(--tran-dur-and-tim-fun);
+    &__icon {
+      width: 12px;
+      height: 12px;
+    }
     &:focus,
     &:hover {
-      /*outline: var(--test-outline);*/
+      background-color: var(--yellow-main-color);
     }
   }
 }
