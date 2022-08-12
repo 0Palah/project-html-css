@@ -1,40 +1,62 @@
 <section class="section section-offerings">
-    <div class="container">
-        <picture>
-            <source media="(min-width: 1200px)" srcset="./images/team/team-1-lg.webp 1x, ./images/team/team-1-lg@2x.webp 2x"
-                type="image/webp" />
-            <source media="(min-width: 1200px)" srcset="./images/team/team-1-lg.jpg 1x, ./images/team/team-1-lg@2x.jpg 2x" />
-            <source media="(min-width: 768px)" srcset="./images/team/team-1-md.webp 1x, ./images/team/team-1-md@2x.webp 2x"
-                type="image/webp" />
-            <source media="(min-width: 768px)" srcset="./images/team/team-1-md.jpg 1x, ./images/team/team-1-md@2x.jpg 2x" />
-            <source media="(max-width: 767px)" srcset="./images/team/team-1-sm.webp 1x, ./images/team/team-1-sm@2x.webp 2x"
-                type="image/webp" />
-            <source media="(max-width: 767px)" srcset="./images/offerings/apple-sm.png 1x, 
-            ./images/offerings/apple-sm@2x.png 2x" />
-            <img src="./images/offerings/apple-sm.png" alt="Портрет человека" />
+    <div class="container offerings-wraper">
+        <div class="apple-wrapper">
+            <picture class="apple-left">
+                <source media="(min-width: 1280px)" srcset="./images/offerings/apple-lg.webp 1x, 
+                ./images/offerings/apple-lg@2x.webp 2x"
+                    type="image/webp" />
+                <source media="(min-width: 1280px)" srcset="./images/offerings/apple-lg.png 1x, 
+                ./images/offerings/apple-lg@2x.png 2x" />
+                <source media="(min-width: 768px)" srcset="./images/offerings/apple-md-1.webp 1x, 
+                ./images/offerings/apple-md-1@2x.webp 2x"
+                    type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/offerings/apple-md-1.png 1x, 
+                ./images/offerings/apple-md-1@2x.png 2x"  />
+                <source media="(max-width: 767px)" srcset="./images/offerings/apple-sm.webp 1x, 
+                ./images/offerings/apple-sm@2x.webp 2x"
+                    type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/offerings/apple-sm.png 1x, 
+                ./images/offerings/apple-sm@2x.png 2x" />
+                <img src="./images/offerings/apple-sm.png" alt="an apple" />
+            </picture>
 
-        </picture>
-        <h2 class="visually-hidden">Offerings</h2>
-        <h3 class="section-title">What’s Special About Our Offerings</h3>
-        <p class="offerings-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
-        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-        <ul class="offerings-list">
-            <li class="offerings-list__item">
-                <b>Fasest Delivery</b>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-            </li >
-            <li class="offerings-list__item">
-                <b>Easy to order</b>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-            </li>
-        </ul>
-        <button type="button">Order Now</button>
-        <a href="#">Read More 
-            <span>
-                <svg class="">
-                    <use></use>
+            <picture class="apple-center">
+                <source media="(min-width: 768px)" srcset="./images/offerings/apple-md-2.webp 1x, 
+                        ./images/offerings/apple-md-2@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/offerings/apple-md-2.png 1x, 
+                        ./images/offerings/apple-md-2@2x.png 2x" />
+                <img src="./images/offerings/apple-md-2.png" alt="an apple" />
+            </picture>
+
+            <picture class="apple-right">
+                <source media="(min-width: 768px)" srcset="./images/offerings/apple-md-3.webp 1x, 
+                        ./images/offerings/apple-md-3@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/offerings/apple-md-3.png 1x, 
+                        ./images/offerings/apple-md-3@2x.png 2x" />
+                <img src="./images/offerings/apple-md-3.png" alt="an apple" />
+            </picture>
+        </div>
+        <div class="desc-wrapper">
+            <h2 class="visually-hidden">Offerings</h2>
+            <h3 class="section-title offerings-title">What’s Special About Our Offerings</h3>
+            <p class="offerings-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+            cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            <ul class="offerings-list list">
+                <li class="offerings-list__item item">
+                    <h4 class="offerings-list__item-title">Fasest Delivery</h4>
+                    <p class="offerings-list__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                </li >
+                <li class="offerings-list__item item">
+                    <h4 class="offerings-list__item-title">Easy to order</h4>
+                    <p class="offerings-list__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                </li>
+            </ul>
+            <button type="button" class="button-primary offerings-button">Order Now</button>
+            <a href="#" class="link offerings-link">Read More
+                <svg class="offerings-link__icon" width="5" height="9">
+                    <use href="./images/sprite.svg#icon-right"></use>
                 </svg>
-            </span>
-        </a>
+            </a>
+        </div>
     </div>
 </section>

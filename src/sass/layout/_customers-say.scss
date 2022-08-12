@@ -9,7 +9,7 @@
     background-image: url('../images/customers/bg-customers768.png');
     padding-bottom: 115px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: url('../images/customers/bg-customers1200.png');
     padding-top: 100px;
     padding-bottom: 212px;
@@ -32,7 +32,7 @@
     @include font(16px, 400, 19px);
     margin-bottom: 48px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 26px;
   }
 }
@@ -43,10 +43,10 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 0;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     gap: 139px;
   }
 }
@@ -66,7 +66,7 @@
       margin-bottom: 0;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 501px;
   }
 }
