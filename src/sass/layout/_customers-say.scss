@@ -5,14 +5,33 @@
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: -50px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/customers/bg-customers(2x).png');
+  }
   @media screen and (min-width: 768px) {
     background-image: url('../images/customers/bg-customers768.png');
     padding-bottom: 115px;
+    margin-bottom: -81px;
+    padding-bottom: 72px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/customers/bg-customers768(2x).png');
+    }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: url('../images/customers/bg-customers1200.png');
+    background-size: 100% 100%;
     padding-top: 100px;
     padding-bottom: 212px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/customers/bg-customers1200(2x).png');
+    }
   }
 }
 
@@ -30,7 +49,7 @@
     @include font(16px, 400, 19px);
     margin-bottom: 48px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 26px;
   }
 }
@@ -41,10 +60,10 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 0;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     gap: 139px;
   }
 }
@@ -64,7 +83,7 @@
       margin-bottom: 0;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 501px;
   }
 }
