@@ -15,39 +15,44 @@
 }
 
 .hero-offerings-wrapper {
+    margin: 0 auto;
+    max-width: 480px;
+    background-color: var(--primary-background-color);
 
     @media screen and (min-width: 768px) {
-            background-color: var(--primary-background-color);
-            background-image: url(../images/offerings/bgi-md.jpg);
+            background-image: url(../images/offerings/bgi-md.svg);
             background-repeat: no-repeat;
             background-position: bottom;
             background-size: cover;
+            max-width: 768px;
         }
     
-        @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-        screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-width: 768px) and (min-resolution: 192dpi),
-        screen and (min-width: 768px) and (min-resolution: 2dppx) {
-            background-image: url(../images/offerings/bgi-md@2x.jpg);
-            background-size: cover;
-        }
+        // @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+        // screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+        // screen and (min-width: 768px) and (min-resolution: 192dpi),
+        // screen and (min-width: 768px) and (min-resolution: 2dppx) {
+        //     background-image: url(../images/offerings/bgi-md@2x.jpg);
+        //     background-size: cover;
+        //     max-width: 768px;
+        // }
     
         @media screen and (min-width: 1280px) {
-            background-color: var(--primary-background-color);
-            background-image: url(../images/offerings/bgi-lg.jpg);
+            background-image: url(../images/offerings/bgi-lg.svg);
             background-repeat: no-repeat;
             background-position: bottom;
             background-size: cover;
+            max-width: 1280px;
         }
     
-        @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-        screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-width: 1280px) and (min-resolution: 192dpi),
-        screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-            background-image: url(../images/offerings/bgi-lg@2x.jpg);
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-size: cover;
-        }
+        // @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+        // screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+        // screen and (min-width: 1280px) and (min-resolution: 192dpi),
+        // screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+        //     background-image: url(../images/offerings/bgi-lg@2x.jpg);
+        //     background-repeat: no-repeat;
+        //     background-position: bottom;
+        //     background-size: cover;
+        //     max-width: 1280px;
+        // }
 }
 
