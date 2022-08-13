@@ -1,10 +1,12 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 .body {
-    background-color: var(--primary-background-color);
-    color: var(--primary-text-color);
-    font-family: 'Roboto', 'Ubuntu', sans-serif;
-    font-size: 14px;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', 'Ubuntu', sans-serif;
+  font-size: 14px;
+  /* відміняє синій фон при дотику по обєктах на тачскірінах */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 h1,
@@ -14,28 +16,45 @@ h4,
 h5,
 h6,
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul,
 ol {
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-
+// то тепер всюди добавляти клас .LIST??????
 .list {
-    list-style: none;
+  list-style: none;
+}
+// то тепер всюди добавляти клас .LINK??????
+.link {
+  text-decoration: none;
+  color: inherit;
 }
 
-.link {
-    text-decoration: none;
-    color: inherit;
+/* посилання */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* адресні дані */
+address {
+  font-style: normal;
+}
+
+/* кнопки */
+button {
+  cursor: pointer;
 }

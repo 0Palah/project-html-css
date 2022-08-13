@@ -5,12 +5,9 @@
 @import './utils/functions';
 @import './utils/mixins';
 @import './utils/hidden';
-
 @import './components/button';
-
 @import './utils/slider';
-
-
+@import './components/logo';
 @import './section';
 @import './layout/header';
 @import './layout/hero';
@@ -19,3 +16,6 @@
 @import './layout/customers-say';
 @import './layout/subscribe';
 @import './layout/footer';
+@import './layout/modal';
+
+
