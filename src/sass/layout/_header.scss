@@ -94,20 +94,4 @@
       }
     }
   }
-  & .button--order-now {
-    display: none;
-    @media screen and (min-width: 768px) {
-      display: block;
-      padding: 7px 17px;
-      white-space: nowrap;
-      border-radius: 30px;
-      border: 1px solid transparent;
-      background-color: var(--button-green-color);
-      transition: background-color var(--tran-dur-and-tim-fun);
-      &:focus,
-      &:hover {
-        background-color: var(--btn-1_clr__hover);
-      }
-    }
-  }
 }
