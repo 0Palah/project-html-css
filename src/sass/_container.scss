@@ -1,7 +1,7 @@
 .container {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
@@ -15,7 +15,6 @@
 }
 
 .hero-offerings-wrapper {
-
 
     @media screen and (min-width: 768px) {
             background-color: var(--primary-background-color);
@@ -51,3 +50,4 @@
             background-size: cover;
         }
 }
+
