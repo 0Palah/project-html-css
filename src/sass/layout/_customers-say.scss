@@ -1,11 +1,11 @@
-.customers-say {
+.customers-say-container {
   padding-top: 60px;
   padding-bottom: 62px;
   background-image: url('../images/customers/bg-customers.png');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: -50px;
+  margin-bottom: -165px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -25,6 +25,7 @@
   @media screen and (min-width: 1280px) {
     background-image: url('../images/customers/bg-customers1200.png');
     background-size: 100% 100%;
+    margin-bottom: -263px;
     padding-top: 100px;
     padding-bottom: 212px;
     @media (min-device-pixel-ratio: 2),

@@ -3,56 +3,55 @@
   margin: 0 auto;
   padding: 0 20px;
 
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-        padding: 0 32px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 32px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        max-width: 1280px;
-        padding: 0 16px;
-    }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding: 0 16px;
+  }
 }
 
 .hero-offerings-wrapper {
-    margin: 0 auto;
-    max-width: 480px;
-    background-color: var(--primary-background-color);
+  margin: 0 auto;
+  max-width: 480px;
+  background-color: var(--primary-background-color);
 
-    @media screen and (min-width: 768px) {
-            background-image: url(../images/offerings/bgi-md.svg);
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-size: cover;
-            max-width: 768px;
-        }
-    
-        // @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-        // screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-        // screen and (min-width: 768px) and (min-resolution: 192dpi),
-        // screen and (min-width: 768px) and (min-resolution: 2dppx) {
-        //     background-image: url(../images/offerings/bgi-md@2x.jpg);
-        //     background-size: cover;
-        //     max-width: 768px;
-        // }
-    
-        @media screen and (min-width: 1280px) {
-            background-image: url(../images/offerings/bgi-lg.svg);
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-size: cover;
-            max-width: 1280px;
-        }
-    
-        // @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-        // screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
-        // screen and (min-width: 1280px) and (min-resolution: 192dpi),
-        // screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-        //     background-image: url(../images/offerings/bgi-lg@2x.jpg);
-        //     background-repeat: no-repeat;
-        //     background-position: bottom;
-        //     background-size: cover;
-        //     max-width: 1280px;
-        // }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/offerings/bgi-md.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    max-width: 768px;
+  }
+
+  // @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  // screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  // screen and (min-width: 768px) and (min-resolution: 192dpi),
+  // screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  //     background-image: url(../images/offerings/bgi-md@2x.jpg);
+  //     background-size: cover;
+  //     max-width: 768px;
+  // }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/offerings/bgi-lg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    max-width: 1280px;
+  }
+
+  // @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  // screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  // screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  // screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  //     background-image: url(../images/offerings/bgi-lg@2x.jpg);
+  //     background-repeat: no-repeat;
+  //     background-position: bottom;
+  //     background-size: cover;
+  //     max-width: 1280px;
+  // }
 }
-
