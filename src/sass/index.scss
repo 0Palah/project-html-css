@@ -5,11 +5,10 @@
 @import './utils/functions';
 @import './utils/mixins';
 @import './utils/hidden';
-
-@import './container';
+@import './utils/slider';
 @import './components/logo';
 @import './components/button';
-// @import '';
+@import './section';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/offerings';

@@ -1,34 +1,23 @@
 :root {
   --primary-text-color: #2c2c2c;
   --primary-background-color: #fefefe;
-  --dark-green-color: #7eb101;
-  --button-green-color: #bbf330;
-  --yellow-main-color: #ffe550;
-
-  --tran-dur-and-tim-fun: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   // Vitalii
-  //   text
-  --clr__dark-green: #7eb101;
-  --text_clr__primary: #2c2c2c;
-  //   background
-  --bckgrnd_clr__primary: #fefefe;
-  --bckgrnd_clr__secondary: #ffe550;
   //   buttons
   --btn-1_clr__default: #bbf330;
   --btn-1_clr__hover: #b5ff00;
   --btn-2-brdr-clr__default: #7eb101;
   --btn-2_brdr-clr__hover: #597d00;
-  --btn-3_brdr-clr__default: #7eb101;
-  --btn-3_brdr-clr__hover: ;
-  --btn-3_bckgrnd-clr__hover: #ffe550;
   // header
   --hdr_shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-  //   icons
-  --icon_fill-clr__primary: #7eb101;
-// nav panel
-border-radius: 0 30px 30px 30px;
-// others
-  --test-outline: 1px solid tomato;
-  // ========
+
+  --white-color: #fff;
+  --dark-green-color: #7eb101;
+  --button-green-color: #bbf330;
+  --button-green-color--hover: #b5ff00;
+  --yellow-main-color: #ffe550;
+  --yellow-border-color: #ffe553;
+  --dark-gray-placeholder-color: #505050;
+
+  --tran-dur-and-tim-fun: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
