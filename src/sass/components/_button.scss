@@ -1,0 +1,123 @@
+.button-primary {
+  border-radius: 4px;
+  padding: 10px 15px;
+  min-width: 50px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: inherit;
+
+  @include font(14px, 400, 21px);
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  transition: background-color var(--tran-dur-and-tim-fun);
+}
+
+.button {
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  &--burger {
+    width: 28px;
+    height: 28px;
+    padding: 6px 2px;
+
+    fill: var(--dark-green-color);
+
+    border-style: none;
+    background-color: var(--primary-background-color);
+
+    transition: box-shadow var(--tran-dur-and-tim-fun),
+      fill var(--tran-dur-and-tim-fun);
+    &__icon {
+      width: 24px;
+      height: 16px;
+    }
+  }
+  &--form-submit {
+    &--footer {
+      display: block;
+      @include font(15px, 400, 20px);
+      height: 42px;
+      padding: 5px 20px;
+      margin: 20px 0 20px auto;
+      background-color: var(--primary-background-color);
+      border-radius: 30px;
+      border: 1px solid var(--dark-green-color);
+      transition: background-color var(--tran-dur-and-tim-fun);
+      &:focus,
+      &:focus-visible,
+      &:hover {
+        background-color: var(--yellow-main-color);
+      }
+      @media screen and (min-width: 768px) {
+        margin: 0;
+      }
+    }
+    &--modal {
+      display: block;
+      @include font(15px, 400, 20px);
+      height: 42px;
+      padding: 5px 20px;
+      margin: 15px auto 0;
+      background-color: var(--primary-background-color);
+      border-radius: 30px;
+      border: 1px solid var(--dark-green-color);
+      transition: background-color var(--tran-dur-and-tim-fun);
+      &:focus,
+      &:focus-visible,
+      &:hover {
+        background-color: var(--yellow-main-color);
+      }
+    }
+  }
+  &--close-modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border-style: none;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid var(--dark-green-color);
+
+    transition: background-color var(--tran-dur-and-tim-fun);
+    &__icon {
+      width: 12px;
+      height: 12px;
+    }
+    &:focus,
+    &:hover {
+      background-color: var(--yellow-main-color);
+    }
+  }
+  &--order-now {
+    &--header {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 7px 17px;
+        white-space: nowrap;
+        @include font(14px, 400, 20px);
+        border-radius: 30px;
+        border: 1px solid transparent;
+        background-color: var(--button-green-color);
+        transition: background-color var(--tran-dur-and-tim-fun);
+        &:focus,
+        &:hover {
+          background-color: var(--btn-1_clr__hover);
+        }
+      }
+    }
+  }
+}

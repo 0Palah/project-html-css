@@ -1,0 +1,115 @@
+.salat-slider {
+    display: none;
+    
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        bottom: -20%;
+        right: 40px;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        
+        border-radius: 50%;
+        width: 320px;
+        height: 320px;
+        border: 14px solid var(--yellow-main-color);
+        }
+        &:hover,
+        &:focus {
+            border: 14px solid var(--button-green-color);
+        }
+    @media screen and (min-width: 1280px) {
+        position: absolute;
+        bottom: -50%;
+        right: 30px;
+
+        border-radius: 50%;
+        width: 580px;
+        height: 580px;
+        border: 26px solid var(--yellow-main-color);
+
+        &:hover,
+        &:focus {
+            border: 26px solid var(--button-green-color);
+            }
+        }
+    }
+
+.slick-arrow {
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    fill: var(--primary-text-color);
+            
+        &:hover,
+        &:focus {
+            fill: #7EB101;
+        }            
+        &:active {
+            fill: var(--primary-text-color);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+        }          
+        @media screen and (min-width: 768px) {
+            width: 12px;
+            height: 20px;
+        }            
+        @media screen and (min-width: 1280px) {
+            width: 16px;
+            height: 29px;
+        }
+}
+
+.slick-list {
+        border-radius: 50%;
+    }
+
+.slick-prev{
+        display: none;
+        
+        @media screen and (min-width: 768px){
+        position: absolute;
+        left: -8%;
+        width: 34px;
+        height: 28px;
+        z-index: 5;
+
+        background-color: var(--white-color);
+        border: none;
+        border-radius: 4px;
+        color: var(--primary-text-color);
+        cursor: pointer;        
+        padding: 4px 9px 4px 13px;
+             
+    }
+        @media screen and (min-width: 1280px){
+        width: 48px;
+        height: 40px;
+
+        padding: 5px 13px 5px 18px;
+        }
+    }   
+    
+.slick-next {
+        display: none;        
+        @media screen and (min-width: 768px) {
+        position: absolute;
+        right: -8%;
+        width: 34px;
+        height: 28px;
+        z-index: 5;
+
+        background-color: var(--white-color);
+        border: none;
+        
+        color: var(--primary-text-color);
+        cursor: pointer;
+        padding: 4px 9px 4px 13px;
+        
+        box-shadow: 0px, 4px rgba(0, 0, 0, 0.06);
+        }
+        @media screen and (min-width: 1280px) {
+        width: 48px;
+        height: 40px;
+        
+        padding: 5px 13px 5px 18px;
+        }
+    }

@@ -1,0 +1,88 @@
+<section class="section subscribe">
+  <div class="container">
+    <div class="subscribe__inner">
+      <div class="subscribe__img-box">
+        <picture>
+          <source
+            srcset="
+              ./images/subscribe/banana-desctop1x.webp 1x,
+              ./images/subscribe/banana-desctop2x.webp 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/subscribe/banana-desctop1x.png 1x,
+              ./images/subscribe/banana-desctop2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+
+          <source
+            srcset="
+              ./images/subscribe/banana-tablet1x.webp 1x,
+              ./images/subscribe/banana-tablet2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/subscribe/banana-tablet1x.png 1x,
+              ./images/subscribe/banana-tablet2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
+              ./images/subscribe/banana-mobile1x.webp 1x,
+              ./images/subscribe/banana-mobile2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/subscribe/banana-mobile1x.png 1x,
+              ./images/subscribe/banana-mobile2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="subscribe__img-banana"
+            src="./images/subscribe/banana-desctop1x.png"
+            alt="banana"
+            width="576"
+          />
+        </picture>
+      </div>
+
+      <div class="sub-info">
+        <h2 class="subscribe__title section-title" id="subscribe">
+          Subscribe To Get Special Offers
+        </h2>
+        <p class="subscribe__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+        <label class="visually-hidden" for="yyy"> Subscribe </label>
+        <form class="subscribe__form">
+          <input
+            class="subscribe__form-input"
+            id="yyy"
+            type="email"
+            placeholder="Enter your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
+          <button class="subscribe__form-button button" type="submit">
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
