@@ -55,7 +55,6 @@
             border-color:var(--button-green-color);
         }
     @media screen and(max-width:767px){
-        max-width: 224px;
         margin-left: auto;
         margin-right: auto;
         &:nth-last-child(-n+3){
@@ -70,7 +69,6 @@
         display: block;
         text-align: center;
         background: #FEFEFE;
-        max-width: 224px; 
     }
 }
 

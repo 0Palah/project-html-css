@@ -61,7 +61,7 @@
 .testimonials-card__inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 24px;
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
   }
@@ -77,9 +77,6 @@
   border-radius: 0 30px 30px 30px;
 
   background-color: var(--white-color);
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
 
   @media screen and (min-width: 768px) {
     width: 336px;
