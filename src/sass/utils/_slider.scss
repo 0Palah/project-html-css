@@ -3,7 +3,7 @@
     @media screen and (min-width: 768px) {
         position: absolute;
         bottom: -20%;
-        right: 0%;
+        right: 40px;
         display: flex;
         align-items:center;
         justify-content: space-between;
@@ -20,6 +20,7 @@
     @media screen and (min-width: 1280px) {
         position: absolute;
         bottom: -50%;
+        right: 30px;
 
         border-radius: 50%;
         width: 580px;
