@@ -68,12 +68,14 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           varius enim in eros elementum tristique.
         </p>
-
+        <label class="visually-hidden" for="yyy"> Subscribe </label>
         <form class="subscribe__form">
           <input
             class="subscribe__form-input"
+            id="yyy"
             type="email"
             placeholder="Enter your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             required
           />
           <button class="subscribe__form-button button" type="submit">

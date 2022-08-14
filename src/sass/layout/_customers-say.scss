@@ -47,6 +47,7 @@
     @include font(42px, 700, 49px);
   }
 }
+
 .customers-say__description {
   @include font(14px, 400, 16px);
   margin-bottom: 32px;
@@ -58,73 +59,90 @@
     margin-bottom: 26px;
   }
 }
+
 .testimonials-card__inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 24px;
   @media screen and (min-width: 768px) {
+    gap: 32px;
     margin-bottom: 32px;
   }
+
   @media screen and (min-width: 1280px) {
     margin-bottom: 0;
   }
+  
   @media screen and (min-width: 1280px) {
     gap: 139px;
   }
 }
-.testimonials-card {
-  padding: 8px 8px;
-  border-radius: 0 30px 30px 30px;
 
+.testimonials-card {
+  padding: 8px;
+  border-radius: 0 30px 30px 30px;
   background-color: var(--white-color);
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+
 
   @media screen and (min-width: 768px) {
     width: 336px;
-
-    &:not(:last-child) {
-      margin-bottom: 0;
-    }
+    padding: 12px;
   }
+
   @media screen and (min-width: 1280px) {
     width: 501px;
+    padding: 14px;
   }
 }
-.testimonials-card__item {
-  &:last-child {
-    width: 160px;
-  }
-}
+
 .testimonials-card__stars {
+  display: flex;
+  gap: 4px;
   margin-bottom: 28px;
 }
+
 .testimonials-card__svg-stars {
   @media screen and (min-width: 768px) {
     fill: var(--yellow-main-color);
   }
 }
+
 .testimonials-card__description {
   color: var(--primary-text-color);
   @include font(16px, 700, 19px);
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    @include font(18px, 700, 21px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(18px, 700, 21px);
+  }
+
 }
+
 .testimonials-card__info {
   display: flex;
   align-items: center;
-  border-right: 0.854167px solid var(--dark-green-color);
+  min-height: 52px;
+  width: fit-content;
+  border-right: 1px solid var(--dark-green-color);
+  margin-right: auto;
 }
+
 .testimonials-card__img {
   margin-right: 16px;
   border-radius: 50%;
   border: 2px solid var(--yellow-border-color);
 }
+
 .testiomonials-card__info-text {
   color: var(--primary-text-color);
   @include font(13px, 600, 20px);
   margin-right: 16px;
 }
+
 .testimonials-card__status {
   font-weight: 400;
 }

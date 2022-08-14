@@ -8,7 +8,7 @@
   &--flex {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 28px;
     width: 100%;
   }
   & .nav {
@@ -79,7 +79,6 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 28px;
-      margin-left: auto;
       &__item {
         display: block;
       }
@@ -87,6 +86,7 @@
         display: block;
         @include font(14px, 400, 16px);
         transition: text-shadow var(--tran-dur-and-tim-fun);
+        padding: 10px 0;
         &:focus,
         &:hover {
           text-shadow: 0 0 4px var(--button-green-color);
