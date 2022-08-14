@@ -35,6 +35,7 @@
     }
     @media screen and (min-width: 1280px) {
       background-image: url(../images/footer_bckgrnd/footer_bckgrnd-fruits_desktop_1x.png);
+      background-repeat: repeat-x;
     }
     @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
       (min-width: 1280px) and (min-resolution: 192dpi),
