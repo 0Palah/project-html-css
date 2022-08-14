@@ -13,7 +13,7 @@
   // @media (min-device-pixel-ratio: 2),
   //   (min-resolution: 192dpi),
   //   (min-resolution: 2dppx) {
-  //   background-image: url('../images/customers/bg-customers(2x).png');
+  //   background-image: url('../images/customers/bg-customers-@2x.png');
   // }
   @media screen and (min-width: 768px) {
     background-image: url('../images/customers/bg-customers768.svg');
@@ -23,19 +23,19 @@
     // @media (min-device-pixel-ratio: 2),
     //   (min-resolution: 192dpi),
     //   (min-resolution: 2dppx) {
-    //   background-image: url('../images/customers/bg-customers768(2x).png');
+    //   background-image: url('../images/customers/bg-customers768-@2x.png');
     // }
   }
   @media screen and (min-width: 1280px) {
     background-image: url('../images/customers/bg-customers1200.svg');
-    background-size: 100% 100%;
+    background-size: cover;
     margin-bottom: -255px;
     padding-top: 100px;
     padding-bottom: 212px;
     // @media (min-device-pixel-ratio: 2),
     //   (min-resolution: 192dpi),
     //   (min-resolution: 2dppx) {
-    //   background-image: url('../images/customers/bg-customers1200(2x).png');
+    //   background-image: url('../images/customers/bg-customers1200-@2x.png');
     // }
   }
 }
